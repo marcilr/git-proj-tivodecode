@@ -8,6 +8,9 @@ Filelist
 links.txt
   tivodecode related links
 
+metadata.txt
+  Extraction of metadata from TiVo file using --dump-metadata option
+
 tivodecode.txt
   tivodecode
 
