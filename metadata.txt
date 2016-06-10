@@ -1,0 +1,41 @@
+metadata.txt
+Created Fri Jun 10 05:13:44 AKDT 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Metadata
+
+
+On Thu June 9, 2016 I noticed that I had a few video files for Wait Until Dark (1967) with 
+Aubrey Hepburn to be processed under ~/Downloads/latest/ to be processed that had come off
+of one of the two TiVos.  I created ~/Downloads/latest/Wait Until Dark (1967) [420p]
+and moved the files there:
+
+$ ls -1 ~/Downloads/latest/Wait\ Until\ Dark\ \(1967\)\ \[420p\]/
+Wait-Until-Dark-1967.txt
+Wait Until Dark.jpg
+Wait Until Dark.m4v
+Wait Until Dark.mpeg
+Wait Until Dark.png
+Wait Until Dark.TiVo
+$
+
+Can convert the TiVo file to mpeg using:
+  malachite:~/Downloads/latest/Wait Until Dark (1967) [420p]/tmp2$ \
+  tivodecode --dump-metadata "Wait Until Dark.TiVo" > "Wait Until Dark.mpeg"
+  Encryption by QUALCOMM ;)
+
+  End of File
+  marcilr@malachite:~/Downloads/latest/Wait Until Dark (1967) [420p]/tmp2$
+
+The --dump-metadata options generated two metadata XML files with movie details
+along with the mpeg:
+  marcilr@malachite:~/Downloads/latest/Wait Until Dark (1967) [420p]/tmp2$ ls -1
+  chunk-01-0001.xml
+  chunk-02-0002.xml
+  Wait Until Dark.mpeg
+  Wait Until Dark.TiVo
+  marcilr@malachite:~/Downloads/latest/Wait Until Dark (1967) [420p]/tmp2$
+
+The xml files have cast, director, writer, other juicy details.  Now need the
+syntax to extract the values I need.
