@@ -8,4 +8,5 @@ tivodecode related links
 
 Links
 =====
-
+Decrypt and Remove Commercials from TiVo Recordings in One Step
+http://lifehacker.com/5048824/decrypt-and-remove-commercials-from-tivo-recordings-in-one-step
